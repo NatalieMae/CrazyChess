@@ -25,3 +25,30 @@ For quicker games access and startup try to follow the following:
     2. Do not include scripts or stylesheets that don't participate in the critical path of your startup HTML file. Load them only when needed. (look into this to see what I actually have to code to make this run correctly)
     3. STRETCH: Reduce the size of my JS files. Compression?? 
     4. 
+
+
+NEW PLAN!!: 
+Create chessboard w/JS using DOM 
+    1: Nested Loops: outer loop: Creates rows 
+                     inner loop: Creates cells in each column
+
+    IMPORTANT CODE TO REMEMBER: To clear the Chessboard:        .clear()
+                                                                chess.clear()
+                                                                chess.fen() 
+                                To make a move on the board:    .move(move,[options])
+                                   The .move function:          Example: 
+                                                                const chess = new Chess()
+                                                                chess.move({from:'g2', to: 'g3'})
+                                To reset the board to inital position:      .reset()
+
+
+                                What is a FEN string? It looks like we can upload a API possibly? Hard code everything but what about this FEN thing.. :) 
+
+                                Add API for characters or look into what a spritesheet is and how it can be used in my coding.                 
+
+                                How am I going to get the user to be able to move a piece, each piece has a spacific placement option and if the move is not allowed it the code has to stop that piece from moving to that square. ture/false. 
+
+                                Keydown
+                                addEventListener
+                                map() Method of Array 
+                                **mozilla recommends using arrow functions as they make the code more readable and shorter.              
