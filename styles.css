@@ -1,18 +1,19 @@
 head {
     color: rgb(57, 23, 88);
 }
-/*body {
+body {
     background-color: aqua;
     color: rgb(117, 61, 170);
-    text-align: left;
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
-}*/
 
-.chessboard{
-    height: 400px;
-    width: 400px;
+}
+
+div.chessboard {
+    height:fit-content;
+    width:fit-content;
     display: flex;
-    border: 3px, solid rgb(39, 29, 97);
+    border: 25px, solid rgb(39, 29, 97);
 }
 
