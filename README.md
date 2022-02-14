@@ -52,3 +52,6 @@ Create chessboard w/JS using DOM
                                 addEventListener
                                 map() Method of Array 
                                 **mozilla recommends using arrow functions as they make the code more readable and shorter.              
+
+
+                                on
