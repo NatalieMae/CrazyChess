@@ -6,16 +6,24 @@
 3. Single phrase comments allowed for players to send to one another.
 4. Stretch: When characters attack they turn into pre-set Mortal Combat characters during the attack. 
 
-NEW: 1: Make Chess/Checkers Board inside the HTML
-     2: Make Board inside the div, with all 8x8 squares marked with the correct number/letter combination. 
+NEW:1: Make Chess/Checkers Board inside the HTML
+    2: Make Board inside the div, with all 8x8 squares marked with the correct number/letter combination. 
         SPAN CLASS AND IMG CLASS ie from Youtube expample: 
-                <div id="e7" class="piece-box black-box">
+                    <div id="e7" class="piece-box black-box">
                     <span class="piece-box-text">e7</span>
                     <img class="piece" piece-type="black_pawn" src=">
-     3: Color board first black/white boxes with Checker pieces. 
+                    </div>
 
-     4: When creating a chessboard use a 
-     <script></script>tag to find the total number of squares in a chessboard along with making sure the function created returns the correct count of squares. 
+    3: Color board first black/white boxes with Checker pieces. Used a Table to create the board.
+
+    4: Need to make the squares clickable so that the images attached to each square can be moved to their correct position (the positioning of the pieces should be coded inside the JS file) I think. :) ***ACTUALLY USE CSS TO CREATE CLICKABLE CHESS BOARD SQUARES***
+
+    5: 
+    
+    
+        NOT APPLICABLE AT THIS TIME 2.14.22
+        When creating a chessboard use a 
+        <script></script>tag to find the total number of squares in a chessboard along with making sure the function created returns the correct count of squares. 
         function countSquares(n) {
             return (n * (n + 1) /2) * (2*n + 1 / 3;
         }
