@@ -1,9 +1,4 @@
-// let gameSquares = myChessboard(8, 8);
 
-// function myChessboard(a, b) {
-//     return a * b;
-    
-// }
 
 // let center = document.createElement('center');
 // let chessboard = document.createElement('board');
@@ -15,3 +10,5 @@
 //     }
 // }
 
+const chess = new Chess() //move pieces or black/white goes in para. ? 
+    chess.move({from:})
