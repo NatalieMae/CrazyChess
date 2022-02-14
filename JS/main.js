@@ -10,5 +10,5 @@
 //     }
 // }
 
-const chess = new Chess() //move pieces or black/white goes in para. ? 
-    chess.move({from:})
+// const chess = new Chess() //move pieces or black/white goes in para. ? 
+//     chess.move({from:})
