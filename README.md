@@ -43,10 +43,12 @@ Create chessboard w/JS using DOM
     IMPORTANT CODE TO REMEMBER: To clear the Chessboard:        .clear()
                                                                 chess.clear()
                                                                 chess.fen() 
+                                                                
                                 To make a move on the board:    .move(move,[options])
                                    The .move function:          Example: 
                                                                 const chess = new Chess()
                                                                 chess.move({from:'g2', to: 'g3'})
+                               
                                 To reset the board to inital position:      .reset()
 
 

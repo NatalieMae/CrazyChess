@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--OH CHRIS!!! LOL ok so I want to use Tangerine and I believe this link is correct but I d
     do believe that I may have to link it somewhere else and maybe that is where my disconnect is? -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Allura&family=Asul&family=Bungee+Shade&family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Comforter&family=Comforter+Brush&family=Corinthia:wght@700&family=Cormorant+Garamond:ital,wght@0,400;1,300;1,400;1,600;1,700&family=Creepster&family=Dancing+Script&family=Dongle&family=Elsie+Swash+Caps&family=Faster+One&family=Fredericka+the+Great&family=Henny+Penny&family=Homemade+Apple&family=IM+Fell+DW+Pica+SC&family=IM+Fell+Great+Primer:ital@0;1&family=Indie+Flower&family=Italiana&family=Lancelot&family=Mea+Culpa&family=Meddon&family=Monoton&family=Niconne&family=Over+the+Rainbow&family=The+Nautigal:wght@700&family=UnifrakturMaguntia&family=Zilla+Slab+Highlight&display=swap" rel="stylesheet">                                                    
@@ -18,60 +18,60 @@
         <br><br>
         <!--I want to turn all of these into buttons with the image of a chess piece as well. can't I do something like: 
                 <div id="h8" button=""-->
-    <table width="800" height="800" border="1" align="center">
+    <table width="800" height="800">
         <tr>
-            <td width="100" height="100" bgcolor="white">
+            <td width="100" height="100" bgcolor="black">
                 <div id="h8" class="piece-box black-square">
-                    <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/Rook.ViewBlackandWhite.JPG", width="100">
+                    <button onclick="click"> 
+                        <img class="blkRook" src="./assets/ChessPieces/Black/Rook.ViewBlackandWhite.JPG" alt="Black Rook" width="100">
                     </button>
                 </div>
             </td>
-            <td width="100" height="100" bgcolor="black">
+            <td width="100" height="100" bgcolor="white">
                 <div id="g8" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/Bishop.FrontViewBlackandWhite.JPG", width="85">
+                        <img class="blkKnight" src="./assets/ChessPieces/Black/Knight.SideViewBlackandWhite.JPG" alt="Black Knight" width="100">
                     </button>
                 </div>
             </td>
-            <td width="100" height="100" bgcolor="white">
+            <td width="100" height="100" bgcolor="black">
                 <div id="f8" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/Knight.SideViewBlackandWhite.JPG", width="100">
-                    </button>
-                </div>
-            </td>
-            <td width="100" height="100" bgcolor="black">
-                <div id="e8" class="piece-box white-square">
-                    <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/King.FrontViewBlackandWhite.JPG", width="100">
+                        <img class="blkBishop" src="./assets/ChessPieces/Black/Bishop.FrontViewBlackandWhite.JPG" alt="Black Bishop" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
-                <div id="d8" class="piece-box black-square">
+                <div id="e8" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/Queen.SideViewBlackandWhite.JPG", width="100">
+                        <img class="blkQueen" src="./assets/ChessPieces/Black/Queen.SideViewBlackandWhite.JPG" alt="Black Queen" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
+                <div id="d8" class="piece-box black-square">
+                    <button onclick="click">
+                        <img class="blkKing" src="./assets/ChessPieces/Black/King.FrontViewBlackandWhite.JPG" alt="Black King" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
                 <div id="c8" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/Knight.FrontViewBlackandWhite.JPG", width="100">
+                        <img class="blkBishop" src="./assets/ChessPieces/Black/Bishop.FrontViewBlackandWhite.JPG" alt="Black Bishop" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
                 <div id="b8" class="piece-box black-square">
                     <button onclick="click">
-                    <img src="./assets/ChessPieces/Black/Bishop.FrontViewBlackandWhite.JPG", width="85" length="65">
+                    <img class="blkKnight" src="./assets/ChessPieces/Black/Knight.SideViewBlackandWhite.JPG" alt="Black Knight" width="100">
                 </div>
             </td>
-            <td width="100" height="100" bgcolor="black">
+            <td width="100" height="100" bgcolor="white">
                 <div id="a8" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/Rook.ViewBlackandWhite.JPG", width="100">
+                        <img class="blkRook"src="./assets/ChessPieces/Black/Rook.ViewBlackandWhite.JPG" alt="Black Rook" width="100">
                     </button>
                 </div>
             </td>
@@ -80,164 +80,276 @@
             <td width="100" height="100" bgcolor="black">
                 <div id="h7" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
                 <div id="g7" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
                 <div id="f7" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
                 <div id="e7" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
                 <div id="d7" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
-                <div id="c7" class="piece-box black-square">
+                <div id="c7" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
-                <div id="b7" class="piece-box white-square">
+                <div id="b7" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
-                <div id="a7" class="piece-box black-square">
+                <div id="a7" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG", width="70" height="85">
+                        <img class="blkPawn" src="./assets/ChessPieces/Black/PawnBlackBlackandWhite.JPG" alt="Black Pawn" width="100">
                     </button>
                 </div>
             </td>
         </tr>
         <tr>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="h6" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="g6" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="f6" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="e6" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="d6" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="c6" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="b6" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="a6" class="piece-box black-square"></div>
+            </td>
         </tr>
         <tr>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="h5" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="g5" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="f5" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="e5" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="d5" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="c5" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="b5" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="a5" class="piece-box white-square"></div>
+            </td>
         </tr>
         <tr>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="h4" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="g4" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="f4" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="e4" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="d4" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="c4" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="b4" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="a4" class="piece-box black-square"></div>
+            </td>
         </tr>
         <tr>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="h3" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="g3" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="f3" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="e3" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="d3" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="c3" class="piece-box white-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="b3" class="piece-box black-square"></div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="a3" class="piece-box white-square"></div>
+            </td>
         </tr>
         <tr>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
-            <td width="100" height="100" bgcolor="white"></td>
-            <td width="100" height="100" bgcolor="black"></td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="h2" class="piece-box white-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="g2" class="piece-box black-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="f2" class="piece-box white-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="e2" class="piece-box black-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="d2" class="piece-box white-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="c2" class="piece-box wblack-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="white">
+                <div id="b2" class="piece-box white-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
+            <td width="100" height="100" bgcolor="black">
+                <div id="a2" class="piece-box black-square">
+                    <button onclick="click">
+                        <img class="whPawn" src="./assets/ChessPieces/White/PawnWhiteBlackandWhite.JPG" alt="White Pawn" width="100">
+                    </button>
+                </div>
+            </td>
         </tr>
         <tr>
             <td width="100" height="100" bgcolor="black">
                 <div id="h1" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/RookWhiteBlackandWhite.JPG", width="85">
+                        <img class="whRook" src="./assets/ChessPieces/White/RookWhiteBlackandWhite.JPG" alt="White Rook" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
                 <div id="g1" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/BishopWhiteBlackandWhite.JPG", width="85">
+                        <img class="whKnight" src="./assets/ChessPieces/White/KnightWhite1BlackandWhite.JPG" alt="White Knight" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
                 <div id="f1" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/KnightWhite1BlackandWhite.JPG", width="85">
+                        <img class="whBishop" src="./assets/ChessPieces/White/BishopWhiteBlackandWhite.JPG" alt="White Bishop" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
                 <div id="e1" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/QueenWhiteBlackandWhite.JPG", width="85">
+                        <img class="whQueen" src="./assets/ChessPieces/White/QueenWhiteBlackandWhite.JPG" alt="white Queen" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
                 <div id="d1" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/KingWhiteBlackandWhite.JPG", width="85">
+                        <img class="whKing" src="./assets/ChessPieces/White/KingWhiteBlackandWhite_2.JPG" alt="white King" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
                 <div id="c1" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/KnightWhiteBlackandWhite.JPG", width="85">
+                        <img class="whBishop" src="./assets/ChessPieces/White/BishopWhiteBlackandWhite.JPG" alt="White Bishop" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="black">
                 <div id="b1" class="piece-box black-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/BishopWhiteBlackandWhite.JPG", width="85">
+                        <img class="whKnight" src="./assets/ChessPieces/White/KnightWhite1BlackandWhite.JPG" alt="White Knight" width="100">
                     </button>
                 </div>
             </td>
             <td width="100" height="100" bgcolor="white">
                 <div id="a1" class="piece-box white-square">
                     <button onclick="click">
-                        <img src="./assets/ChessPieces/White/RookWhiteBlackandWhite.JPG", width="85">
+                        <img class="whRook" src="./assets/ChessPieces/White/RookWhiteBlackandWhite.JPG" alt="White Rook" width="100"> 
                     </button>
                 </div>
             </td>
@@ -247,59 +359,9 @@
     
                 <!--Can I take the bgcolor "white or black" and attach it to the div below? or somehow add the div info to the <td> info to be able to pull the correct 
                 spacing when it comes to moving the chess pieces around? -->
-
-
-    <!-- <div class="chesspieces">
-
-        <div id="h6" class="piece-box black-square"></div>
-        <div id="g6" class="piece-box white-square"></div>
-        <div id="f6" class="piece-box black-square"></div>
-        <div id="e6" class="piece-box white-square"></div>
-        <div id="d6" class="piece-box black-square"></div>
-        <div id="c6" class="piece-box white-square"></div>
-        <div id="b6" class="piece-box black-square"></div>
-        <div id="a6" class="piece-box white-square"></div>
-
-        <div id="h5" class="piece-box white-square"></div>
-        <div id="g5" class="piece-box black-square"></div>
-        <div id="f5" class="piece-box white-square"></div>
-        <div id="e5" class="piece-box black-square"></div>
-        <div id="d5" class="piece-box white-square"></div>
-        <div id="c5" class="piece-box black-square"></div>
-        <div id="b5" class="piece-box white-square"></div>
-        <div id="a5" class="piece-box black-square"></div>
-
-        <div id="h4" class="piece-box black-square"></div>
-        <div id="g4" class="piece-box white-square"></div>
-        <div id="f4" class="piece-box black-square"></div>
-        <div id="e4" class="piece-box white-square"></div>
-        <div id="d4" class="piece-box black-square"></div>
-        <div id="c4" class="piece-box white-square"></div>
-        <div id="b4" class="piece-box black-square"></div>
-        <div id="a4" class="piece-box white-square"></div>
-
-        <div id="h3" class="piece-box white-square"></div>
-        <div id="g3" class="piece-box black-square"></div>
-        <div id="f3" class="piece-box white-square"></div>
-        <div id="e3" class="piece-box black-square"></div>
-        <div id="d3" class="piece-box white-square"></div>
-        <div id="c3" class="piece-box black-square"></div>
-        <div id="b3" class="piece-box white-square"></div>
-        <div id="a3" class="piece-box black-square"></div>
-
-        <div id="h2" class="piece-box black-square"></div>
-        <div id="g2" class="piece-box white-square"></div>
-        <div id="f2" class="piece-box black-square"></div>
-        <div id="e2" class="piece-box white-square"></div>
-        <div id="d2" class="piece-box black-square"></div>
-        <div id="c2" class="piece-box white-square"></div>
-        <div id="b2" class="piece-box black-square"></div>
-        <div id="a2" class="piece-box white-square"></div>
-    </div> -->
-
-    
-    <h2>FINISH HIM!</h2>
-            <script src="./JS/main.js"></script>
+            <h2>FINISH HIM!</h2>
+                <script src="./JS/main.js">
+                </script>
         </body> 
     <footer>
         <p>Author: Natalie Mae</p>

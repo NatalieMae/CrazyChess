@@ -1,9 +1,30 @@
 body {
-    background-color: aqua;
+    background: linear-gradient(105deg, rgba(0, 249, 255, 1) 45%, rgba(51, 56, 57, 1) 96%);
     color: rgb(117, 61, 170);
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+/* table {
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+} */
+
+table {
+    border-spacing: 0;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 800px;
+    border: 5px solid black;
+}
+
+tbody.knight {
+    border-spacing: 1px solid lightgreen;
+}
 
 
