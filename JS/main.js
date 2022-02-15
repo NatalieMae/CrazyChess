@@ -15,14 +15,12 @@
 
 //CHRIS: It is saying that document is not defined. And on stackoverflow it states something 
 //about node.js or JSDom Support. ??
-let whRookElement = document.querySelector(".whRook");
-let whKnightElement = document.querySelector(".whKnight");
-let whBishopElement = document.querySelector(".whBishop");
-let whKingElement = document.querySelector(".whKing");
-let whQueenElement = document.querySelector(".whQueen");
-let whPawnElement = document.querySelector(".whPawn");
+let whRook = table.querySelector(".whRook");
+let whKnight = table.querySelector(".whKnight");
+let whBishop = table.querySelector(".whBishop");
+let whKing = table.querySelector(".whKing");
+let whQueen = table.querySelector(".whQueen");
+let whPawn = table.querySelector(".whPawn");
 
-function addGamePieces(whRook) {
-    whRook.addEventListener('mousedown', handleMouseDown);
-}
-addGamePieces();
+function moveGamePieces() {
+    moveGamePieces.addEventListener()}
