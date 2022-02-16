@@ -17,16 +17,16 @@
 //about node.js or JSDom Support. ??
 
 
-function moveGamePieces(whRook, whKnight, whBishop, whKing, whQueen, whPawn) {
-    let whRook = document.querySelector(".whRook");
-    let whKnight = document.querySelector(".whKnight");
-    let whBishop = document.querySelector(".whBishop");
-    let whKing = document.querySelector(".whKing");
-    let whQueen = document.querySelector(".whQueen");
-    let whPawn = document.querySelector(".whPawn");
+// function moveGamePieces(whRook, whKnight, whBishop, whKing, whQueen, whPawn) {
+//     let whRook = document.querySelector(".whRook");
+//     let whKnight = document.querySelector(".whKnight");
+//     let whBishop = document.querySelector(".whBishop");
+//     let whKing = document.querySelector(".whKing");
+//     let whQueen = document.querySelector(".whQueen");
+//     let whPawn = document.querySelector(".whPawn");
 
 
-    moveGamePieces.addEventListener();
-}
+//     moveGamePieces.addEventListener();
+// }
 
-document.getElementById().innerHTML = moveGamePieces;
+// document.getElementById().innerHTML = moveGamePieces;

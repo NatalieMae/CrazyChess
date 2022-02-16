@@ -1,19 +1,29 @@
-body {
+/* body {
     background: linear-gradient(105deg, rgba(0, 249, 255, 1) 45%, rgba(51, 56, 57, 1) 96%);
     color: rgb(117, 61, 170);
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+} */
+
+body {
+    user-select: none;
+}
+
+.dropzone {
+    width: fit-content;
+    height: fit-content;
+    background:rgb(117, 61, 170);
+    padding: 10px;
+}
+
+#draggable {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: white;
 }
 
 /* table {
-    border-spacing: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-} */
-
-table {
     border-spacing: 0;
     margin-top: auto;
     margin-left: auto;
@@ -21,7 +31,7 @@ table {
     margin-bottom: auto;
     width: 800px;
     border: 5px solid black;
-}
+} */
 
 #click {
     border-image: fill solid darkblue;
