@@ -1,32 +1,61 @@
+// let gamePieces = newImage(whRook, blkRook)
+// move(gamePieces).to(0,0)
 
+// let whRook = newImage('assets/ChessPieces/White/RookWhiteBlackandWhite.JPG')
+// move(whRook).to()
 
-// let center = document.createElement('center');
-// let chessboard = document.createElement('board');
-//     for(let i = 0; i < 8; i++) {
-//         let tr = document.createElement('tr');
-//     for(let i = 0; i < 8; i++) {
-//         let td = document.createElement('td');
-//     if((j + i) % 2 === 0) {}    
-//     }
-// }
+//to move chess pieces there are only two para needs, (x,y) or (h1,h3) or (a,b)
+//Looking up equation for moving pieces. 
 
-// const chess = new Chess() //move pieces or black/white goes in para. ? 
-//     chess.move({from:})
+let dropzone=""; //(this information is from developer.mozilla.org I believe it
+              //should work if I add the correct parameters etc. Work in progress fingers crossed!)
+let draggable= [blkRook, blkKnight, blkBishop, blkQueen, blkKing];
+/* events fired on the draggable target */
+document.addEventListener("drag", function(event) {
+    draggable = event.target;
+}, false);
 
-//CHRIS: It is saying that document is not defined. And on stackoverflow it states something 
-//about node.js or JSDom Support. ??
+document.addEventListener("dragstart", function(event) {
+  // store a ref. on the dragged elem
+  dragged = event.target;
+  // make it half transparent
+  event.target.style.opacity = .5;
+}, false);
 
+document.addEventListener("dragend", function(event) {
+  // reset the transparency
+  event.target.style.opacity = "";
+}, false);
 
-function moveGamePieces(whRook, whKnight, whBishop, whKing, whQueen, whPawn) {
-    let whRook = document.querySelector(".whRook");
-    let whKnight = document.querySelector(".whKnight");
-    let whBishop = document.querySelector(".whBishop");
-    let whKing = document.querySelector(".whKing");
-    let whQueen = document.querySelector(".whQueen");
-    let whPawn = document.querySelector(".whPawn");
+/* events fired on the drop targets */
+document.addEventListener("dragover", function(event) {
+  // prevent default to allow drop
+  event.preventDefault();
+}, false);
 
+document.addEventListener("dragenter", function(event) {
+  // highlight potential drop target when the draggable element enters it
+  if (event.target.className == "dropzone") {
+    event.target.style.background = "purple";
+  }
 
-    moveGamePieces.addEventListener();
-}
+}, false);
 
-document.getElementById().innerHTML = moveGamePieces;
+document.addEventListener("dragleave", function(event) {
+  // reset background of potential drop target when the draggable element leaves it
+  if (event.target.className == "dropzone") {
+    event.target.style.background = "";
+  }
+
+}, false);
+
+document.addEventListener("drop", function(event) {
+  // prevent default action (open as link for some elements)
+//   event.preventDefault();
+  // move dragged elem to the selected drop target
+  if (event.target.className == "dropzone") {
+    event.target.style.background = "";
+    dragged.parentNode.removeChild( dragged );
+    event.target.appendChild( dragged );
+  }
+}, false);
