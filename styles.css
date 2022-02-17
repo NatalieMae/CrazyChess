@@ -1,4 +1,5 @@
 body {
+    user-select: none;
     background: linear-gradient(105deg, rgba(0, 249, 255, 1) 45%, rgba(51, 56, 57, 1) 96%);
     color: rgb(117, 61, 170);
     text-align: center;
@@ -6,21 +7,30 @@ body {
 }
 
 
-table {
-    border: 3px;
-    border-bottom-color: black;
+/* table.dropzone {
+    width: 200px;
+        height: 200px;
+        background: blueviolet;
+        margin-bottom: 10px;
+        padding: 10px;
+    border: 3px solid black;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-}
+} */
 
 #draggable {
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 50px;
     text-align: center;
-    background: aqua;
+    background: white;
 }
+.dropzone {
+        background: transparent;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
 
 
 

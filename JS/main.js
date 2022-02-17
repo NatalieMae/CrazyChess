@@ -51,7 +51,7 @@ document.addEventListener("dragleave", function(event) {
 
 document.addEventListener("drop", function(event) {
   // prevent default action (open as link for some elements)
-//   event.preventDefault();
+    event.preventDefault();
   // move dragged elem to the selected drop target
   if (event.target.className == "dropzone") {
     event.target.style.background = "";
